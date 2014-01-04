@@ -1,0 +1,48 @@
+Pura JVM Project Worklog of Daniel Klein
+----------------------------------------
+
+ToDo:
+- Opcode-Tests (in Java) implementieren?
+- HeaderDoc Kommentare (ala JavaDoc?) -> anschauen!
+- Implement full stack trace
+- Clean up data structures (remove unnecessary fields)
+- How to handle fields during runtime?
+- Implement a linked list or array list implementation?
+
+- Implement a hash table implementation?
+- Implement method tables (Venners page 151 and chapter 8)
+- Implement field tables (class instance variables and instance variables)?
+- Skip (do not store) unused/unknown class attributes?
+
+- java.lang.Object-Methodenaufrufe bei Arrays abfangen?
+- Introduce TwoSlots data type, and use it as a replacement for uint64 in relevant cases. => More future proof for > 32 bit architechtures.
+
+- Take statistics of bytecode usage.
+
+Bugs:
+- A Homedirectory shortcut '~' is not resolved in the classpath yet. 
+
+Notes:
+- Im Interpreter-Switch verwende ich bei cases, die lokale Variablen deklarieren, umschließende spitzgeschweifte Klammern, damit man in jedem case einen eigenen, lokalen Namespace hat und somit Variablenbezeichner wiederverwenden kann.
+- No security and validity checks yet. Especially the stack looks critical to me, because I don't check the types that are on there (yet). A possible way to add this would be to add an additional "type stack". Adding type info to the operand stack would also be possible, but it would complicate the things going on there quite a bit.
+- Mögliche Optimierung: QUICK_ Opcodes benutzen. Aber: Pro Opcode einmal Laufzeit von O(n). Besser zusätzliche Info im Constant Pool.
+- Pura ist wahrscheinlich NICHT 100%ig konform zur JVM Spec. (Rundungen und Genauigkeiten) 
+- Anstatt error()-Aufrufen Exceptions werfen? Möglich? Umbauten?
+- Keine Typinformation zur Laufzeit! -> Verkompliziert den Aufbau deutlich, besonders wegen 32bit alignment. Möglichkeiten?
+- Only partwise support of Exceptions yet. (Throwing exceptions is OK, catching them doesn't work, finally should be fine.)
+- Object.hashCode() returns the objects internal address of the virtual machine. This also seems to be the usual way the Sun JVM implements this, too. (See their java.lang.Object source code.)
+- Typeless VM, bis auf Objekte zur Laufzeit
+
+Titel: Laden, initialisieren und auflösen symbolischer Informationen Laufzeitstrukturen der Java Virtual Machine
+Laufzeitstrukturen der Java Virtual Machine und deren initialisierung, optimierung und das auflösen symbolischer Informationen.
+Laufzeitstrukturen der Java Virtual Machine; Optimierung und auflösen symbolischer Informationen.
+... und deren optimierung wärend der Ausführung
+Optimierte Laufzeitstrukturen der JVM und die Auflösung von symbolischen Links.
+Optimierte Nutzung von Laufzeitstrukturen der JVM zum auflösen von symbolischen Links.
+Implementierung/Realisierung (und Optimierung) der Laufzeitstrukturen der Java Virtual Machine 
+
+
+Versions:
+
+- no release yet
+

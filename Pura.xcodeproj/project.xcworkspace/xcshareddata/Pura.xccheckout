@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E048C43D-BB19-4841-9880-4977F5CEEF4F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pura</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>55522699-3F53-4B37-8A51-FA6085B5E75B</key>
+		<string>https://github.com/bigshadow/Pura.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pura.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>55522699-3F53-4B37-8A51-FA6085B5E75B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bigshadow/Pura.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>55522699-3F53-4B37-8A51-FA6085B5E75B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>55522699-3F53-4B37-8A51-FA6085B5E75B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pura</string>
+		</dict>
+	</array>
+</dict>
+</plist>
