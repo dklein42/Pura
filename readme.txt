@@ -5,11 +5,11 @@ Pura is a cleanroom implementation of a Java Virtual Machine written in ANSI C-8
 
 I wrote Pura as part of my diploma thesis in Computer Science at the University of Applied Sciences Cologne. The German thesis paper can be found in the "doc" folder.
 
-Please note that Pura is far from complete. It basically is just the (mostly complete) loader and execution engine (interpreter) part of a JVM. Other important parts like a garbage collector or the verifier are missing and the interpreter is limited to one thread. Also there is no test rig, which means there may be an unknown number of bugs in the implementation. Many events that normally generate exceptions currently generate errors instead, because exception handling in the interpreter itself (in the C source) is not implemented yet. Throwing exceptions within interpreted code works fine though.
+Please note that Pura is far from complete. It basically is just the (mostly complete) loader and execution engine (interpreter) part of a JVM. Other important parts like a garbage collector or the verifier are missing and the interpreter is limited to one thread. Also there is no test rig, which means there may be an unknown number of bugs in the implementation. Many events that normally generate exceptions currently generate errors instead, because exception handling in the interpreter itself (in the C source) is not implemented. Throwing exceptions in interpreted code works fine though.
 
-Pura uses its own library which implements a very limited set of base classes, and even those are far from completely implemented. The intention here was to get simple applications and command line output going, which is working fine. Note that Pura uses a proprietary native API. For methods marked as "native" there has to be explicit support within native.c.
+Pura uses its own Java class library, which only implements a very limited set of base classes and even those are far from completely implemented. The intention here was to get simple applications and command line output going, which is working fine. Note that Pura uses a proprietary native API. For methods marked as "native" there has to be explicit support within native.c.
 
-Pura has been tested on PowerPC and x86 processors in 32 bit mode under OS X, Windows and Linux. 64 bit modes have not been tested and may not work.
+Pura has been tested on PowerPC and x86 processors in 32 bit mode under OS X. It should also work under Windows and Linux. 64 bit modes have not been tested and may not work.
 
 
 Usage:
